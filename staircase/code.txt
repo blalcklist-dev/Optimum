@@ -1,0 +1,22 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the staircase function below.
+def staircase(n):
+    n2 = n - 1
+    for c in range(n):
+        espaco = ' ' * n2
+        hashtag = '#' * (c+1)
+        print(espaco + hashtag)
+        n2 -= 1
+
+
+if __name__ == '__main__':
+    n = int(input())
+
+    staircase(n)
